@@ -1,32 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculadora</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <div class="caja-calculadora">
+      <div class="caja-eleccion-numeros">
+        <div class="eleccion" onclick="elegir(1)" id="num1">1</div>
+        <div class="eleccion" onclick="elegir(2)" id="num2">2</div>
+        <div class="eleccion" onclick="elegir(3)" id="num3">3</div>
+        <div class="eleccion" onclick="elegir(4)" id="num4">4</div>
+        <div class="eleccion" onclick="elegir(5)" id="num5">5</div>
+        <div class="eleccion" onclick="elegir(6)" id="num6">6</div>
+        <div class="eleccion" onclick="elegir(7)" id="num7">7</div>
+        <div class="eleccion" onclick="elegir(8)" id="num8">8</div>
+        <div class="eleccion" onclick="elegir(9)" id="num9">9</div>
+        <div class="eleccion resetear" onclick="resetear()" id="resetear">
+          RESETEAR
+        </div>
+      </div>
+      <div class="caja-numeros">
+        <h2 class="numero" id="primerNumero">0</h2>
+        <h2 class="numero" id="segundoNumero">0</h2>
+      </div>
 
-        <div class="caja-numeros">
-        <h2 class="primerNumero"></h2>
-        <h2 class="primerNumero"></h2>
-         </div>
+      <div class="caja-operaciones">
+        <button class="operacion sumar" onclick="sumar()"><h3>+</h3></button>
+        <button class="operacion restar" onclick="restar()"><h3>-</h3></button>
+        <button class="operacion multiplicar" onclick="multiplicar()">
+          <h3>X</h3>
+        </button>
+        <button class="operacion dividir" onclick="dividir()">
+          <h3>%</h3>
+        </button>
+      </div>
 
-         <div class="caja-operaciones">
-            <button class="operacion sumar" onclick="sumar()"><h3>+</h3></button>
-            <button class="operacion restar" onclick="restar()"><h3>-</h3></button>
-            <button class="operacion multiplicar" onclick="multiplicar()"><h3>X</h3></button>
-            <button class="operacion dividir" onclick="dividir()"><h3>%</h3></button>
-         </div>
-
-         <div class="caja-resultado">
-            <h4 class="resultado" id="resultado"></h4>
-         </div>
-
+      <div class="caja-resultado">
+        <h4 class="resultado-intro">El resultado es:</h4>
+        <span id="resultado"></span>
+      </div>
     </div>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

@@ -1,13 +1,35 @@
+let numero1 = 0;
+let numero2 = 0;
 
-let resultadoSuma = document.getElementById("resultado");
+document.getElementById("primerNumero").textContent = numero1;
 
+document.getElementById("segundoNumero").textContent = numero2;
 
+let resultadoCuenta = document.getElementById("resultado");
 
-function sumar(num1, num2) {
-    
-    return resultadoSuma.textContent = `El resultado es ${num1 + num2}`;
+const sumar = () => (resultadoCuenta.textContent = numero1 + numero2);
 
-    };
+const multiplicar = () => (resultadoCuenta.textContent = numero1 * numero2);
 
+const dividir = () => (resultadoCuenta.textContent = numero1 / numero2);
 
-sumar(4, 7);
+const restar = () => (resultadoCuenta.textContent = numero1 - numero2);
+
+const elegir = (numero) => {
+  if (document.getElementById("primerNumero").textContent == 0) {
+    document.getElementById("primerNumero").textContent = numero;
+    numero1 = numero;
+  } else {
+    document.getElementById("segundoNumero").textContent = numero;
+    numero2 = numero;
+  }
+};
+
+const resetear = () => {
+  numero1 = 0;
+  numero2 = 0;
+  document.getElementById("primerNumero").textContent = 0;
+  document.getElementById("segundoNumero").textContent = 0;
+
+  document.getElementById("resultado").textContent = 0;
+};
