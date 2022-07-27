@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@400;500&family=Signika+Negative:wght@300;400;500;600;700&family=Syncopate:wght@400;700&display=swap');
+
+
+
+* {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {  
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: cornflowerblue;
+}
+
+.caja-calculadora {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-shrink: 1;
+    background-color:rgb(230, 239, 255);
+    border-radius: 20px;
+    min-width: 340px;
+    max-width: 500px;
+    height: 500px;
+    gap: 50px;
+}
+
+.caja-numeros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 30px;
+
+    width: 300px;
+    height: auto;
+    font-family: 'raleway';
+
+}
+
+.caja-numeros h2 {
+
+    padding-bottom: 5px;
+    border-bottom: 3px solid black;
+}
+
+.caja-operaciones {
+
+    background-color: grey; 
+    border-radius: 20px;
+    width: 280px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+
+}
+
+.operacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    
+    font-family: 'montserrat';
+    background-color: white;
+
+}
+
+.sumar, .restar {
+
+    font-size: 30px;
+}
+
+.caja-resultado {
+
+    height: auto;
+    width: 300px;
+    font-family: "montserrat";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    color: rgb(30, 30, 159);
+    text-align: center;
+
+}
